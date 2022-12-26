@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+body {
+  margin: 0
+}
+
+p {
+  transform: translateX(-10px);
+  font-family: 'Chivo Mono', monospace;
+}
+
+.tooltip{
+  background-color: orange;
+  color: black;
+  padding: .5em;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition-duration: .2s;
+  transition-property: opacity, transform;
+}
+
+.hide{
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.show{
+  opacity: 1;
+  transform: translateY(0px);
+}
